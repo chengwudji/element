@@ -1,7 +1,7 @@
 export const getCell = function(event) {
   let cell = event.target;
 
-  while (cell && cell.tagName.toUpperCase() !== 'HTML') {
+  while (cell && cell.tagName && cell.tagName.toUpperCase() !== 'HTML') {
     if (cell.tagName.toUpperCase() === 'TD') {
       return cell;
     }
